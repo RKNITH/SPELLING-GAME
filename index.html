@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Spelling Game</h1>
+        <p id="year"></p>
+    </header>
+
+    <main>
+        <div id="game">
+            <div id="info">
+                <p id="score">Score: 0</p>
+                <p id="highest-score">Highest Score: 0</p>
+
+            </div>
+            <p id="timer">Time: 30s</p>
+            <div id="controls">
+                <button id="start-btn">Start</button>
+                <button id="stop-btn" disabled>Stop</button>
+                <button id="restart-btn" disabled>Restart</button>
+            </div>
+            <div id="gameplay" style="display: none;">
+                <p id="word-display"></p>
+                <input type="text" id="user-input" placeholder="Enter a word" disabled>
+                <button id="submit-btn" disabled>Submit</button>
+            </div>
+            <p id="message"></p>
+            <div id="meaning-display"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <span id="footer-year"></span> Spelling Game</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

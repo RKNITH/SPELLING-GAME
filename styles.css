@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#game {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#controls,
+#gameplay {
+    margin: 10px 0;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#info p {
+    margin: 0;
+    padding: 15px;
+    background-color: #ee09db;
+    border-radius: 5px;
+    color: rgb(243, 240, 247);
+    font-weight: 900;
+    margin: 10px;
+}
+
+/* Timer Styles */
+#timer {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(243, 188, 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1s ease-in-out infinite;
+    color: azure;
+}
+
+@keyframes pulse {
+    0% {
+
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+
+/* Input Container Styles */
+#user-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#meaning-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-input {
+        margin-bottom: 20px;
+    }
+}
